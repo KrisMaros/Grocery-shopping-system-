@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Grocery Shopping System</title>
+    </h:head>
+    <h:body style="background-color: darkturquoise">
+        <h1>Grocery Shopping System</h1>
+        <h:form>         
+                
+                <p>Type customer name :</p>
+                <h:inputText id="customer"
+                             value="#{checkCredentials.customerName}" 
+                          required="true"
+                          requiredMessage="Error: customer name "/>
+                          
+                <p>Type customer password :</p>
+                <h:inputSecret id="passwordCust"
+                               value="#{checkCredentials.custPassword}" 
+                             required="true"
+                             requiredMessage="Error: customer password "/>
+                                              
+                <p><h:commandButton type="submit" value="Login" action="#{checkCredentials.checkCustomerCredentials(checkCredentials.customerName, checkCredentials.custPassword)}" />
+                </p>             
+                <p><h:commandButton type="submit" value="Home page" action="index" immediate="true" />
+                </p>
+        </h:form>
+    </h:body>
+</html>
