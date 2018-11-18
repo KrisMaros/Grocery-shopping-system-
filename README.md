@@ -11,20 +11,29 @@ will need a use-case diagram, activity diagrams, analysis models, class diagrams
 sequence diagrams and a page navigation diagram. The case study is a good example of
 the standard required.
 Your web application must demonstrate the following features:
+
  The MVC architecture
+
  Design patterns
+
  A login process
+
  At least two types of user – administrator and standard user
+
  Query the database and present the result-set in a manner that is appropriate for
 the user that is currently logged in
+
  Perform insert, update, and delete operations on the database in response to user
 interactions
 
 Implement your web application
 Implement your web application, which must:
+
  Adhere to the design submitted for Part 1
+
  Interact with a database to perform insert, update, and delete operations on the
 database in response to user interactions
+
  Use JavaServer Faces
 
 Test your implementation
